@@ -31,6 +31,12 @@ public class SpamFilter {
                             f = i;
                             l = subSequenceLength;
                         }
+                        if (overallSuccessRate == 1.0) {
+                            break;
+                        }
+                    }
+                    if (overallSuccessRate == 1.0) {
+                        break;
                     }
                 }
                 f++;
